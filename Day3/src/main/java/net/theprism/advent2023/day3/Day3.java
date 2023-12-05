@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
 // 540131
 public class Day3 {
     public static void main(String[] args) throws IOException {
-        InputStream stream = Day3.class.getResourceAsStream("/schematic.txt");
+        InputStream stream = Day3.class.getResourceAsStream("/inputs.txt");
         if (stream == null) throw new NullPointerException("Could not open file");
         BufferedReader reader = new BufferedReader(new InputStreamReader(stream));
         String line;

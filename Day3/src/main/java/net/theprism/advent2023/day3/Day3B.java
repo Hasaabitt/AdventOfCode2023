@@ -13,7 +13,7 @@ import java.util.regex.Pattern;
 // 86879020
 public class Day3B {
     public static void main(String[] args) throws IOException {
-        InputStream stream = Day3B.class.getResourceAsStream("/schematic.txt");
+        InputStream stream = Day3B.class.getResourceAsStream("/inputs.txt");
         if (stream == null) throw new NullPointerException("Could not open file");
         BufferedReader reader = new BufferedReader(new InputStreamReader(stream));
         String line;

@@ -13,7 +13,7 @@ import java.io.InputStream;
 // 71036
 public class Day2B {
     public static void main(String[] args) throws IOException {
-        InputStream gameData = Day2B.class.getResourceAsStream("/games.txt");
+        InputStream gameData = Day2B.class.getResourceAsStream("/inputs.txt");
         if (gameData == null) throw new NullPointerException("Could not find game information");
         CharStream stream = CharStreams.fromStream(gameData);
         CubeGameLexer lexer = new CubeGameLexer(stream);

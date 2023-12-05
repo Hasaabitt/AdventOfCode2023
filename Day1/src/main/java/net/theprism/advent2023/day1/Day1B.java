@@ -14,7 +14,7 @@ public class Day1B {
     public static final Pattern DIGITS_PATTERN = Pattern.compile("one|two|three|four|five|six|seven|eight|nine|\\d");
 
     public static void main(String[] args) {
-        InputStream stream = Day1.class.getResourceAsStream("/calibration.txt");
+        InputStream stream = Day1.class.getResourceAsStream("/inputs.txt");
         if (stream == null) throw new NullPointerException("Could not find calibration file");
         int total = 0;
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(stream))) {
@@ -58,13 +58,14 @@ public class Day1B {
     private static final Map<String, Integer> DIGITS = Map.of(
             "one", 1,
             "two", 2,
-            "three",3,
+            "three", 3,
             "four", 4,
             "five", 5,
             "six", 6,
             "seven", 7,
             "eight", 8,
             "nine", 9);
+
     public static String getDigit(String line, int start) {
         if (line.charAt(start) >= '1' && line.charAt(start) <= '9') {
             return Character.toString(line.charAt(start));

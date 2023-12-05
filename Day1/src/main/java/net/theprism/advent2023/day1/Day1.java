@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 // 55090
 public class Day1 {
     public static void main(String[] args) {
-        InputStream stream = Day1.class.getResourceAsStream("/calibration.txt");
+        InputStream stream = Day1.class.getResourceAsStream("/inputs.txt");
         if (stream == null) throw new NullPointerException("Could not find calibration file");
         int total = 0;
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(stream))) {

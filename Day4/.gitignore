@@ -12,9 +12,6 @@ target/
 *.iml
 *.ipr
 
-inputs.txt
-test_inputs.txt
-
 ### Eclipse ###
 .apt_generated
 .classpath
